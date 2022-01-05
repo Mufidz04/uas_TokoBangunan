@@ -1,2 +1,0 @@
-RoundedCornerBorder
-RoundedJTextField
