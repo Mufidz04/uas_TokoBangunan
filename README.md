@@ -24,3 +24,6 @@ try {
     System.err.println( "Failed to initialize LaF" );
 }
 ```
+## Result
+![image](https://user-images.githubusercontent.com/27707873/148694843-a529bcf8-b663-4cc5-a726-9437b7b2eb52.png)
+
