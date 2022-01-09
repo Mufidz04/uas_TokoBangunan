@@ -24,7 +24,7 @@ public class KoneksiDatabase {
     public static Connection getKoneksi() throws SQLException{
         if(conn == null){
                 try {
-                    propert.load(new FileInputStream("C:\\Users\\Asep Supriyanto\\Documents\\NetBeansProjects\\java_mvc_unsika\\src\\asep\\db\\konfigurasiDatabase.properties"));
+                    propert.load(new FileInputStream("C:\\Users\\aripirwansyah\\Documents\\NetBeansProjects\\uas_TokoBangunan\\uas_TokoBangunan\\src\\modul_db\\konfigurasiDatabase.properties"));
                 } catch (IOException ex) {
                    System.err.println("error mengambil file"+ex);
                    
