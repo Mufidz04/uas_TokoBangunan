@@ -4,10 +4,21 @@
  */
 package modul_transaksi.controller;
 
+import modul_transaksi.model.ModelTransaksi;
+import modul_transaksi.view.ViewTransaksi;
+import modul_transaksi.view.ViewTransaksiLanjutan;
+
 /**
  *
  * @author mufid
  */
 public class ControllerTransaksi {
-    
+    private ModelTransaksi mT;
+    private ViewTransaksi vT;
+    private ViewTransaksiLanjutan vTL;
+
+    public ControllerTransaksi(ViewTransaksi vT, ViewTransaksiLanjutan vTL) {
+        this.vT = vT;
+        this.vTL = vTL;
+    }
 }
