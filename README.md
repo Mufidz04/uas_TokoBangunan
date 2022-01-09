@@ -7,6 +7,7 @@ Lakukan `git clone` pada project ini, setelah itu buka pada NetBeans `Open Proje
 
 ## Configure Flatlaf Di Setiap Main Form
 Import library Flatlaf pada project ini, folder library terletak pada `look&feel`
+> ![image](https://user-images.githubusercontent.com/27707873/148694721-1fd7469a-8515-47b0-9047-a81f98805571.png)
 
 
 Setelah semua sudah dipersiapkan, terapkan kode dibawah `Look and feel setting code (optional)`
