@@ -1,5 +1,5 @@
 # Guide How To Use This Project
-*DISCLAIMER THIS PROJECT USED Look&Feel by Flatlaf*
+*Disclaimer this project used Look&Feel by Flatlaf*
 
 ## Open Project
 Lakukan `git clone` pada project ini, setelah itu buka pada NetBeans `Open Projects`
