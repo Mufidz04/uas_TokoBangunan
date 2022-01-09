@@ -5,12 +5,22 @@
 package modul_transaksi.view;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.DateFormat;
 import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 import java.util.StringTokenizer;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
+import modul_db.KoneksiDatabase;
+import modul_transaksi.controller.ControllerTransaksi;
 
 /**
  *
@@ -21,6 +31,7 @@ public class ViewTransaksiLanjutan extends javax.swing.JFrame {
     public StringTokenizer token;
     public String ganti = "";
     private ViewTransaksi vT;
+    private ControllerTransaksi cT;
 
     /**
      * Creates new form ViewTransaksiLanjutan
@@ -66,7 +77,7 @@ public class ViewTransaksiLanjutan extends javax.swing.JFrame {
 
         kembalianTF.setText(String.valueOf("Rp" + ganti));
     }
-
+   
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

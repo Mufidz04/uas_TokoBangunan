@@ -5,10 +5,22 @@
 package modul_transaksi.view;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.StringTokenizer;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.SpinnerNumberModel;
 import javax.swing.UIManager;
 import javax.swing.table.DefaultTableModel;
 
@@ -80,9 +92,6 @@ public class ViewTransaksi extends javax.swing.JFrame {
         return ukuranComboBox;
     }
     
-    
-
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -148,6 +157,11 @@ public class ViewTransaksi extends javax.swing.JFrame {
         jLabel7.setText("PENJUALAN UD. Tiga Saudara");
 
         tambahBarangButton.setText("TAMBAH BARANG");
+        tambahBarangButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tambahBarangButtonActionPerformed(evt);
+            }
+        });
 
         batalButton.setText("BATAL");
 
@@ -338,6 +352,10 @@ public class ViewTransaksi extends javax.swing.JFrame {
         // TODO add your handling code here:
         new ViewTransaksiLanjutan().setVisible(true);
     }//GEN-LAST:event_prosesTransaksiButtonActionPerformed
+
+    private void tambahBarangButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahBarangButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tambahBarangButtonActionPerformed
 
     /**
      * @param args the command line arguments

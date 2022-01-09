@@ -21,4 +21,6 @@ public class ControllerTransaksi {
         this.vT = vT;
         this.vTL = vTL;
     }
+    
+    
 }

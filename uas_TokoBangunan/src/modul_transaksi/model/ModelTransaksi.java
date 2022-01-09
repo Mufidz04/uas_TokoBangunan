@@ -14,13 +14,14 @@ import modul_db.KoneksiDatabase;
  * @author mufid
  */
 public class ModelTransaksi {
-   private String totalBayar;
-   private String uangBayar;
-   
-   private String idTransaksiDetail;
-   private String idTransaksi;
-   private String namaBarang;
-   private String qty;
+
+    private String totalBayar;
+    private String uangBayar;
+
+    private String idTransaksiDetail;
+    private String idTransaksi;
+    private String namaBarang;
+    private String qty;
 
     public String getTotalBayar() {
         return totalBayar;
@@ -69,20 +70,21 @@ public class ModelTransaksi {
     public void setQty(String qty) {
         this.qty = qty;
     }
-        public void simpantransaksi(){
+
+    public void simpanTransaksiDB() {
         String sql = "INSERT INTO transaksi (idTransaksi,namaPelanggan,totalBayar,uangBayar) "
-                    + " VALUES ('"+getIdTransaksi()+"' , '"+getNamaBarang()+"' , '"+getTotalBayar()+"' , '"+getUangBayar()+"' ) " ; 
-    
+                + " VALUES ('" + getIdTransaksi() + "' , '" + getNamaBarang() + "' , '" + getTotalBayar() + "' , '" + getUangBayar() + "' ) ";
+
         try {
             PreparedStatement eksekusi = KoneksiDatabase.getKoneksi().prepareStatement(sql);
             eksekusi.execute();
-            
+
             JOptionPane.showMessageDialog(null, "Data Transaksi Berhasil DiSimpan");
-            
+
         } catch (SQLException ex) {
             //Logger.getLogger(ModelPelanggan.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showConfirmDialog(null, "Data gagal disimpan ke dalam Database \n" + ex);
         }
-        
+
     }
 }
