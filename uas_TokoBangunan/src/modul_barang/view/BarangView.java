@@ -29,18 +29,18 @@ public class BarangView extends javax.swing.JInternalFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        idBarangTF = new javax.swing.JTextField();
+        namaBarangTF = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jenisBarangCB = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        satuanCB = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jTextField3 = new javax.swing.JTextField();
+        ukuranCB = new javax.swing.JComboBox<>();
+        jumlahTF = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        simpanBT = new javax.swing.JButton();
 
         setClosable(true);
         setTitle("Master Barang");
@@ -50,29 +50,29 @@ public class BarangView extends javax.swing.JInternalFrame {
         jLabel1.setForeground(new java.awt.Color(95, 155, 159));
         jLabel1.setText("ID Barang");
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setEnabled(false);
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        idBarangTF.setBackground(new java.awt.Color(255, 255, 255));
+        idBarangTF.setEnabled(false);
+        idBarangTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                idBarangTFActionPerformed(evt);
             }
         });
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
+        namaBarangTF.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setForeground(new java.awt.Color(95, 155, 159));
         jLabel2.setText("Nama Barang");
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setEditable(true);
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-- Pilih Jenis Barang--", "Semen", "Pasir", "Bata", "Besi", "Paku", "Lem", "Keramik", "Cat", "Lainnya (ketik disini)" }));
+        jenisBarangCB.setBackground(new java.awt.Color(255, 255, 255));
+        jenisBarangCB.setEditable(true);
+        jenisBarangCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-- Pilih Jenis Barang--", "Semen", "Pasir", "Bata", "Besi", "Paku", "Lem", "Keramik", "Cat", "Lainnya (ketik disini)" }));
 
         jLabel3.setForeground(new java.awt.Color(95, 155, 159));
         jLabel3.setText("Jenis Barang");
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setEditable(true);
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Pilih Satuan--", "kg", "pcs", "dus", "kol", "lainnya (ketik disini)" }));
+        satuanCB.setBackground(new java.awt.Color(255, 255, 255));
+        satuanCB.setEditable(true);
+        satuanCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Pilih Satuan--", "kg", "pcs", "dus", "kol", "lainnya (ketik disini)" }));
 
         jLabel4.setForeground(new java.awt.Color(95, 155, 159));
         jLabel4.setText("Satuan");
@@ -80,19 +80,19 @@ public class BarangView extends javax.swing.JInternalFrame {
         jLabel5.setForeground(new java.awt.Color(95, 155, 159));
         jLabel5.setText("Ukuran");
 
-        jComboBox3.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox3.setEditable(true);
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Pilih Ukuran--", "besar", "sedang", "kecil", "lainnya (ketik disini)" }));
+        ukuranCB.setBackground(new java.awt.Color(255, 255, 255));
+        ukuranCB.setEditable(true);
+        ukuranCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Pilih Ukuran--", "besar", "sedang", "kecil", "lainnya (ketik disini)" }));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
+        jumlahTF.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel6.setForeground(new java.awt.Color(95, 155, 159));
         jLabel6.setText("Jumlah");
 
-        jButton1.setBackground(new java.awt.Color(95, 155, 159));
-        jButton1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("SIMPAN");
+        simpanBT.setBackground(new java.awt.Color(95, 155, 159));
+        simpanBT.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        simpanBT.setForeground(new java.awt.Color(255, 255, 255));
+        simpanBT.setText("SIMPAN");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -101,7 +101,7 @@ public class BarangView extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(78, 78, 78)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(simpanBT, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -112,12 +112,12 @@ public class BarangView extends javax.swing.JInternalFrame {
                             .addComponent(jLabel6))
                         .addGap(64, 64, 64)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField1)
-                            .addComponent(jTextField2)
-                            .addComponent(jComboBox1, 0, 225, Short.MAX_VALUE)
-                            .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField3))))
+                            .addComponent(idBarangTF)
+                            .addComponent(namaBarangTF)
+                            .addComponent(jenisBarangCB, 0, 225, Short.MAX_VALUE)
+                            .addComponent(satuanCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ukuranCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jumlahTF))))
                 .addContainerGap(85, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -126,29 +126,29 @@ public class BarangView extends javax.swing.JInternalFrame {
                 .addGap(51, 51, 51)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(idBarangTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(namaBarangTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jenisBarangCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(satuanCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ukuranCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jumlahTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
-                .addComponent(jButton1)
+                .addComponent(simpanBT)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
@@ -166,16 +166,13 @@ public class BarangView extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void idBarangTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idBarangTFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_idBarangTFActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JTextField idBarangTF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -183,8 +180,11 @@ public class BarangView extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JComboBox<String> jenisBarangCB;
+    private javax.swing.JTextField jumlahTF;
+    private javax.swing.JTextField namaBarangTF;
+    private javax.swing.JComboBox<String> satuanCB;
+    private javax.swing.JButton simpanBT;
+    private javax.swing.JComboBox<String> ukuranCB;
     // End of variables declaration//GEN-END:variables
 }
