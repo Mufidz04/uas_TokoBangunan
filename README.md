@@ -14,7 +14,7 @@ Setelah semua sudah dipersiapkan, terapkan kode dibawah `Look and feel setting c
 > ![image](https://user-images.githubusercontent.com/27707873/148694335-82e6780d-9ada-4768-b240-fc6541d97e0e.png)
 
 
-Lalu lakukan inisialisasi look&feel terhadap fungsi main 
+Lalu lakukan inisialisasi look&feel terhadap fungsi `main `
 > ![image](https://user-images.githubusercontent.com/27707873/148694405-2d73d8de-a78d-460a-9e41-bb01bb67849a.png)
 
 ```
