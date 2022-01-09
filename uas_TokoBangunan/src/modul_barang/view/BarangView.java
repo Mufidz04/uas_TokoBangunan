@@ -41,6 +41,8 @@ public class BarangView extends javax.swing.JInternalFrame {
         jumlahTF = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         simpanBT = new javax.swing.JButton();
+        hargaTF = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
 
         setClosable(true);
         setTitle("Master Barang");
@@ -94,6 +96,11 @@ public class BarangView extends javax.swing.JInternalFrame {
         simpanBT.setForeground(new java.awt.Color(255, 255, 255));
         simpanBT.setText("SIMPAN");
 
+        hargaTF.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel7.setForeground(new java.awt.Color(95, 155, 159));
+        jLabel7.setText("Harga");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -109,9 +116,11 @@ public class BarangView extends javax.swing.JInternalFrame {
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4)
                             .addComponent(jLabel5)
-                            .addComponent(jLabel6))
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7))
                         .addGap(64, 64, 64)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(hargaTF)
                             .addComponent(idBarangTF)
                             .addComponent(namaBarangTF)
                             .addComponent(jenisBarangCB, 0, 225, Short.MAX_VALUE)
@@ -145,11 +154,15 @@ public class BarangView extends javax.swing.JInternalFrame {
                     .addComponent(ukuranCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(hargaTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(jumlahTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
+                .addGap(18, 18, 18)
                 .addComponent(simpanBT)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -172,6 +185,7 @@ public class BarangView extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField hargaTF;
     private javax.swing.JTextField idBarangTF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -179,6 +193,7 @@ public class BarangView extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JComboBox<String> jenisBarangCB;
     private javax.swing.JTextField jumlahTF;
