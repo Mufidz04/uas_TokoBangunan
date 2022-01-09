@@ -5,6 +5,10 @@
  */
 package modul_barang.view;
 
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+import modul_barang.controller.BarangController;
+
 /**
  *
  * @author aripirwansyah
@@ -14,9 +18,39 @@ public class BarangView extends javax.swing.JInternalFrame {
     /**
      * Creates new form BarangView
      */
+    
+    private BarangController BC;
     public BarangView() {
         initComponents();
+        
+        BC = new BarangController(this);
     }
+
+    public JTextField getHargaTF() {
+        return hargaTF;
+    }
+
+    public JComboBox<String> getJenisBarangCB() {
+        return jenisBarangCB;
+    }
+
+    public JTextField getJumlahTF() {
+        return jumlahTF;
+    }
+
+    public JTextField getNamaBarangTF() {
+        return namaBarangTF;
+    }
+
+    public JComboBox<String> getSatuanCB() {
+        return satuanCB;
+    }
+
+    public JComboBox<String> getUkuranCB() {
+        return ukuranCB;
+    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -49,6 +83,7 @@ public class BarangView extends javax.swing.JInternalFrame {
 
         jPanel1.setBackground(new java.awt.Color(226, 233, 210));
 
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(95, 155, 159));
         jLabel1.setText("ID Barang");
 
@@ -62,6 +97,7 @@ public class BarangView extends javax.swing.JInternalFrame {
 
         namaBarangTF.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(95, 155, 159));
         jLabel2.setText("Nama Barang");
 
@@ -69,6 +105,7 @@ public class BarangView extends javax.swing.JInternalFrame {
         jenisBarangCB.setEditable(true);
         jenisBarangCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-- Pilih Jenis Barang--", "Semen", "Pasir", "Bata", "Besi", "Paku", "Lem", "Keramik", "Cat", "Lainnya (ketik disini)" }));
 
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(95, 155, 159));
         jLabel3.setText("Jenis Barang");
 
@@ -76,9 +113,11 @@ public class BarangView extends javax.swing.JInternalFrame {
         satuanCB.setEditable(true);
         satuanCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Pilih Satuan--", "kg", "pcs", "dus", "kol", "lainnya (ketik disini)" }));
 
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(95, 155, 159));
         jLabel4.setText("Satuan");
 
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(95, 155, 159));
         jLabel5.setText("Ukuran");
 
@@ -88,16 +127,23 @@ public class BarangView extends javax.swing.JInternalFrame {
 
         jumlahTF.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel6.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(95, 155, 159));
         jLabel6.setText("Jumlah");
 
         simpanBT.setBackground(new java.awt.Color(95, 155, 159));
-        simpanBT.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        simpanBT.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         simpanBT.setForeground(new java.awt.Color(255, 255, 255));
         simpanBT.setText("SIMPAN");
+        simpanBT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                simpanBTActionPerformed(evt);
+            }
+        });
 
         hargaTF.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel7.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(95, 155, 159));
         jLabel7.setText("Harga");
 
@@ -162,7 +208,7 @@ public class BarangView extends javax.swing.JInternalFrame {
                     .addComponent(jumlahTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(simpanBT)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -182,6 +228,11 @@ public class BarangView extends javax.swing.JInternalFrame {
     private void idBarangTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idBarangTFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_idBarangTFActionPerformed
+
+    private void simpanBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanBTActionPerformed
+        // TODO add your handling code here:
+        BC.simpan();
+    }//GEN-LAST:event_simpanBTActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
