@@ -9,7 +9,7 @@ Lakukan `git clone` pada project ini, setelah itu buka pada NetBeans `Open Proje
 Import library Flatlaf pada project ini, folder library terletak pada `look&feel`
 
 
-Setelah semua sudah dipersiapkan, hapus bagian yang di block
+Setelah semua sudah dipersiapkan, terapkan kode dibawah `Look and feel setting code (optional)`
 > ![image](https://user-images.githubusercontent.com/27707873/148694335-82e6780d-9ada-4768-b240-fc6541d97e0e.png)
 
 
