@@ -4,7 +4,11 @@
  */
 package uas_tokobangunan;
 
+<<<<<<< HEAD
 import modul_laporan.view.viewInternalLaporan;
+=======
+import modul_barang.view.BarangView;
+>>>>>>> f5294adf15efbb7f6d6293602eb491d2a4e30da2
 
 /**
  *
@@ -30,7 +34,7 @@ public class App_Utama extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        menuDataBarang = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -50,13 +54,18 @@ public class App_Utama extends javax.swing.JFrame {
             .addGap(0, 450, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("Data Barang");
-        jMenu1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu1ActionPerformed(evt);
+        menuDataBarang.setText("Data Barang");
+        menuDataBarang.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menuDataBarangMouseClicked(evt);
             }
         });
-        jMenuBar1.add(jMenu1);
+        menuDataBarang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuDataBarangActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(menuDataBarang);
 
         jMenu2.setText("Data Transaksi");
         jMenuBar1.add(jMenu2);
@@ -94,9 +103,17 @@ public class App_Utama extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+    private void menuDataBarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDataBarangActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenu1ActionPerformed
+//        BarangView barang = new BarangView();
+//        barang.setVisible(true);
+    }//GEN-LAST:event_menuDataBarangActionPerformed
+
+    private void menuDataBarangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuDataBarangMouseClicked
+        // TODO add your handling code here:
+        BarangView barang = new BarangView();
+        barang.setVisible(true);
+    }//GEN-LAST:event_menuDataBarangMouseClicked
 
     private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
         // TODO add your handling code here:
@@ -145,11 +162,11 @@ public class App_Utama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenu menuDataBarang;
     // End of variables declaration//GEN-END:variables
 }
