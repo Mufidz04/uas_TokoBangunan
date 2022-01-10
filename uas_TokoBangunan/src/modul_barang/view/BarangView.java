@@ -176,14 +176,16 @@ public class BarangView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Master Barang");
+        setBackground(new java.awt.Color(96, 157, 160));
+        setForeground(new java.awt.Color(96, 157, 160));
 
         jPanel1.setBackground(new java.awt.Color(224, 231, 207));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Input Barang"));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(95, 155, 159));
         jLabel1.setText("ID Barang");
 
-        idBarangTF.setBackground(new java.awt.Color(255, 255, 255));
         idBarangTF.setEnabled(false);
         idBarangTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,8 +196,6 @@ public class BarangView extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(95, 155, 159));
         jLabel2.setText("Nama Barang");
-
-        namaBarangTF.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(95, 155, 159));
@@ -217,19 +217,12 @@ public class BarangView extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(95, 155, 159));
         jLabel6.setText("Jumlah");
 
-        jumlahTF.setBackground(new java.awt.Color(255, 255, 255));
-
-        hargaTF.setBackground(new java.awt.Color(255, 255, 255));
-
-        ukuranCB.setBackground(new java.awt.Color(255, 255, 255));
         ukuranCB.setEditable(true);
         ukuranCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Pilih Ukuran--", "besar", "sedang", "kecil", "lainnya (ketik disini)" }));
 
-        satuanCB.setBackground(new java.awt.Color(255, 255, 255));
         satuanCB.setEditable(true);
         satuanCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Pilih Satuan--", "kg", "pcs", "dus", "kol", "lainnya (ketik disini)" }));
 
-        jenisBarangCB.setBackground(new java.awt.Color(255, 255, 255));
         jenisBarangCB.setEditable(true);
         jenisBarangCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-- Pilih Jenis Barang--", "Semen", "Pasir", "Bata", "Besi", "Paku", "Lem", "Keramik", "Cat", "Lainnya (ketik disini)" }));
 
@@ -378,7 +371,7 @@ public class BarangView extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 475, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -410,6 +403,7 @@ public class BarangView extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void idBarangTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idBarangTFActionPerformed
