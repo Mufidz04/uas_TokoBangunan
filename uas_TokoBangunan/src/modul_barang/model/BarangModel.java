@@ -97,4 +97,42 @@ public class BarangModel {
             JOptionPane.showMessageDialog(null, "Data Gagal Disimpan \n"+ex);
         }
     }
+    
+    public void updateDataBarang(){
+        
+        String sql = "UPDATE produk SET namaProduk = '"+getNamaBarang()+"'"
+                +" ,jenisProduk ='"+getJenisBarang()+"'"
+                +" ,satuan ='"+getSatuan()+"'"
+                +" ,ukuranProduk ='"+getUkuran()+"'"
+                +" ,hargaProduk ='"+getHarga()+"'"
+                +" ,jumlahProduk='"+getJumlah()+"' WHERE idProduk = '"+getIdBarang()+"'";
+        
+        
+        try {
+            //inisialisasi preparedstement
+            PreparedStatement eksekusi = koneksi.getKoneksi().prepareStatement(sql);
+            eksekusi.execute();
+            
+            JOptionPane.showMessageDialog(null, "Data Berhasi Diupdate");
+        } catch (SQLException ex) {
+            //Logger.getLogger(modelPelanggan.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Data Gagal Diupdate \n"+ex);
+        }
+    }
+    
+    public void deleteDataBarang(){
+        String sql = "DELETE FROM produk WHERE idProduk = "
+                + " '"+getIdBarang()+"'";
+        
+        try {
+            //inisialisasi preparedstement
+            PreparedStatement eksekusi = koneksi.getKoneksi().prepareStatement(sql);
+            eksekusi.execute();
+            
+            JOptionPane.showMessageDialog(null, "Data Berhasi Dihapus");
+        } catch (SQLException ex) {
+            //Logger.getLogger(modelPelanggan.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Data Gagal Dihapus \n"+ex);
+        }
+    }
 }

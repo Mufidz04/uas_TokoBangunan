@@ -5,7 +5,22 @@
         <group>
             <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/view/ViewTransaksi.java</file>
             <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_laporan/view/viewInternalLaporan.java</file>
+<<<<<<< HEAD
             <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_login/view/ViewLogin.java</file>
+=======
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_db/KoneksiDatabase.java</file>
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/view/BarangView.java</file>
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_laporan/model/modelLaporan.java</file>
+=======
+            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/view/BarangView.java</file>
+<<<<<<< HEAD
+            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/view/ViewTransaksi.java</file>
+            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/model/BarangModel.java</file>
+            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/controller/BarangController.java</file>
+=======
+>>>>>>> f5294adf15efbb7f6d6293602eb491d2a4e30da2
+>>>>>>> e3c33f5d4865257f3231b7516890f09c164207a5
+>>>>>>> d4a0bee7f36efc83cc57b199b675e719a1b4ad2d
         </group>
     </open-files>
 </project-private>
