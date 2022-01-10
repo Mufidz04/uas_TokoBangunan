@@ -12,33 +12,35 @@ import java.io.FileNotFoundException;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
- * @author Asep Supriyanto
+ * @author mufid
  */
 public class KoneksiDatabase {
-     //inisialisasi variabel dg connection file clas JDBC
-    private static Connection conn;
-    
-    private static Properties propert = new Properties();
-    public static Connection getKoneksi() throws SQLException{
+   private static Connection conn;
+        private static Properties propert = new Properties();
+        
+        private static String driver = "com.mysql.jdbc.Driver"; 
+        private static String url = "jdbc:mysql://localhost:3306/db_material"; 
+        private static String username = "root"; 
+        private static String password = ""; 
+        
+        public static Connection getKoneksi() throws SQLException {
         if(conn == null){
-                try {
-                    propert.load(new FileInputStream("C:\\Users\\aripirwansyah\\Documents\\NetBeansProjects\\uas_TokoBangunan\\uas_TokoBangunan\\src\\modul_db\\konfigurasiDatabase.properties"));
-                } catch (IOException ex) {
-                   System.err.println("error mengambil file"+ex);
-                   
-                   System.err.println("error mengambil file"+ex);
+            try {
+                conn = DriverManager.getConnection(url,username,password);
+                } 
+            catch (SQLException ex) {
+                Logger.getLogger(KoneksiDatabase.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                //inisialisasi koneksi database
-                conn = DriverManager.getConnection(propert.getProperty("jdbc.url"),propert.getProperty("jdbc.username"),propert.getProperty("jdbc.password"));
-            } 
-          return conn;
-        }
-  
-        public static void main(String[] args) throws SQLException {
-        if (getKoneksi().equals(conn)){
-            System.out.print("sukses terkoneksi ");
-        }
+            }   
+        return conn;
+    }
+    public static void main (String[] args) throws SQLException{
+    if(getKoneksi().equals(conn)){
+        System.out.println("Sukses Terkoneksi");
+    }
     }
 }
