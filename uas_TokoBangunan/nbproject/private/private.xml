@@ -4,6 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/view/BarangView.java</file>
+            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/view/ViewTransaksi.java</file>
+            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/model/BarangModel.java</file>
+            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/controller/BarangController.java</file>
         </group>
     </open-files>
 </project-private>
