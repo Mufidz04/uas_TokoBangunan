@@ -6,9 +6,6 @@
 package modul_db;
 
 import java.sql.Connection;
-import java.io.IOException;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
