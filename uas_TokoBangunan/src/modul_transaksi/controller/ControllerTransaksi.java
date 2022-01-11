@@ -13,14 +13,28 @@ import modul_transaksi.view.ViewTransaksiLanjutan;
  * @author mufid
  */
 public class ControllerTransaksi {
+
     private ModelTransaksi mT;
     private ViewTransaksi vT;
     private ViewTransaksiLanjutan vTL;
 
-    public ControllerTransaksi(ViewTransaksi vT, ViewTransaksiLanjutan vTL) {
+    public ControllerTransaksi(ViewTransaksi vT) {
+        this.mT = new ModelTransaksi();
         this.vT = vT;
-        this.vTL = vTL;
     }
-    
-    
+
+
+    public void simpanLaporanDB() {
+        mT = new ModelTransaksi();
+        mT.setNamaPelanggan(vT.getNamaPelangganTF().getText());
+        mT.setNamaBarang(vT.getComboBoxNamaProduk().getSelectedItem().toString());
+        mT.setJenisProduk(vT.getJenisProdukTF().getText());
+        mT.setSatuan(vT.getSatuanComboBox().getSelectedItem().toString());
+        mT.setHargaProduk(vT.getHargaProdukTF().getText());
+        mT.setQty(vT.getQtySpinner().getValue().toString());
+        mT.setSubtotal(vT.getTotalTagihanLbl().getText());
+
+//        mT.simpanTransaksiDB();
+    }
+
 }
