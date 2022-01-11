@@ -4,12 +4,6 @@
  */
 package uas_tokobangunan;
 
-import com.formdev.flatlaf.FlatLightLaf;
-import javax.swing.UIManager;
-import modul_login.controller.ControllerLogin;
-import modul_login.view.ViewLogin;
-import modul_transaksi.view.ViewTransaksi;
-
 /**
  *
  * @author mufid
@@ -21,12 +15,6 @@ public class App_Utama extends javax.swing.JFrame {
      */
     public App_Utama() {
         initComponents();
-        this.setTitle("Halaman Awal");
-        ControllerLogin cL = ControllerLogin.getInstance(new ViewLogin());
-//        JOptionPane.showMessageDialog(null, cL.getmL().getHakAkses());
-        if (!cL.getmL().getHakAkses().toLowerCase().contains("admin")) {
-            menuBarang.setVisible(false);
-        }
     }
 
     /**
@@ -40,13 +28,13 @@ public class App_Utama extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        menuBarang = new javax.swing.JMenu();
-        menuTransaksi = new javax.swing.JMenu();
-        menuLaporan = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(228, 235, 213));
+        jPanel1.setBackground(new java.awt.Color(224, 231, 207));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -59,19 +47,19 @@ public class App_Utama extends javax.swing.JFrame {
             .addGap(0, 450, Short.MAX_VALUE)
         );
 
-        menuBarang.setText("Master Barang");
-        jMenuBar1.add(menuBarang);
-
-        menuTransaksi.setText("Master Transaksi");
-        menuTransaksi.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                menuTransaksiMouseClicked(evt);
+        jMenu1.setText("Data Barang");
+        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu1ActionPerformed(evt);
             }
         });
-        jMenuBar1.add(menuTransaksi);
+        jMenuBar1.add(jMenu1);
 
-        menuLaporan.setText("Master Laporan");
-        jMenuBar1.add(menuLaporan);
+        jMenu2.setText("Data Transaksi");
+        jMenuBar1.add(jMenu2);
+
+        jMenu3.setText("Laporan");
+        jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
 
@@ -87,14 +75,11 @@ public class App_Utama extends javax.swing.JFrame {
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void menuTransaksiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuTransaksiMouseClicked
+    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new ViewTransaksi().setVisible(true);
-    }//GEN-LAST:event_menuTransaksiMouseClicked
+    }//GEN-LAST:event_jMenu1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -122,11 +107,7 @@ public class App_Utama extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(App_Utama.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        try {
-            UIManager.setLookAndFeel(new FlatLightLaf());
-        } catch (Exception ex) {
-            System.err.println("Failed to initialize LaF");
-        }
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -136,10 +117,10 @@ public class App_Utama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JMenu menuBarang;
-    private javax.swing.JMenu menuLaporan;
-    private javax.swing.JMenu menuTransaksi;
     // End of variables declaration//GEN-END:variables
 }

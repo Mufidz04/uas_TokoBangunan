@@ -21,11 +21,11 @@ public class Uas_TokoBangunan {
     public static void main(String[] args) {
         //FlatLightLaf.setup();
         // TODO code application logic here
-//        App_Utama utama = new App_Utama();
-//        utama.setVisible(true);
+        App_Utama utama = new App_Utama();
+        utama.setVisible(true);
         
-        ViewLogin login = new ViewLogin();
-        login.setVisible(true);
+//        ViewLogin login = new ViewLogin();
+//        login.setVisible(true);
     }
     
 }
