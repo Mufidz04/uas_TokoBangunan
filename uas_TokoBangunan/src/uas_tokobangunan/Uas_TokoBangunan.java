@@ -4,8 +4,6 @@
  */
 package uas_tokobangunan;
 
-//import com.formdev.flatlaf.FlatLightLaf;
-
 import com.formdev.flatlaf.FlatLightLaf;
 import modul_login.view.ViewLogin;
 
