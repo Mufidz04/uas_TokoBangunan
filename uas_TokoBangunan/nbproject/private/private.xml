@@ -3,23 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/uas_tokobangunan/App_Utama.java</file>
             <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/model/BarangModel.java</file>
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/view/ViewTransaksiLanjutan.java</file>
             <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/controller/BarangController.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_laporan/view/viewInternalLaporan.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_db/KoneksiDatabase.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/view/BarangView.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_laporan/model/modelLaporan.java</file>
-=======
-            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/view/BarangView.java</file>
-<<<<<<< HEAD
-            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/view/ViewTransaksi.java</file>
-            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/model/BarangModel.java</file>
-            <file>file:/C:/Users/aripirwansyah/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/controller/BarangController.java</file>
-=======
->>>>>>> f5294adf15efbb7f6d6293602eb491d2a4e30da2
->>>>>>> e3c33f5d4865257f3231b7516890f09c164207a5
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_laporan/view/viewLaporan.java</file>
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/controller/ControllerTransaksi.java</file>
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/model/ModelTransaksi.java</file>
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_login/controller/ControllerLogin.java</file>
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_login/view/ViewLogin.java</file>
+            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_login/model/ModelLogin.java</file>
         </group>
     </open-files>
 </project-private>
