@@ -33,7 +33,7 @@ public class ControllerLogin {
             vL.setVisible(false);
             this.mL = nML;
             App_Utama utama = new App_Utama();
-//            JOptionPane.showMessageDialog(null, mL.getHakAkses());
+            JOptionPane.showMessageDialog(null, mL.getHakAkses());
             utama.setVisible(true);
 
         }

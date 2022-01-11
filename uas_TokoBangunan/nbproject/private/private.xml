@@ -2,17 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/uas_tokobangunan/App_Utama.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/model/BarangModel.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/view/ViewTransaksiLanjutan.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_barang/controller/BarangController.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_laporan/view/viewLaporan.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/controller/ControllerTransaksi.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_transaksi/model/ModelTransaksi.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_login/controller/ControllerLogin.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_login/view/ViewLogin.java</file>
-            <file>file:/C:/Users/Asep%20Supriyanto/Documents/NetBeansProjects/uas_TokoBangunan/uas_TokoBangunan/src/modul_login/model/ModelLogin.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

@@ -11,6 +11,8 @@ import modul_laporan.view.viewLaporan;
 
 //import modul_laporan.view.view;
 import modul_barang.view.BarangView;
+import modul_login.controller.ControllerLogin;
+import modul_login.view.ViewLogin;
 //>>>>>>> d4a0bee7f36efc83cc57b199b675e719a1b4ad2d
 
 
@@ -25,6 +27,12 @@ public class App_Utama extends javax.swing.JFrame {
      */
     public App_Utama() {
         initComponents();
+        
+        ControllerLogin cL = ControllerLogin.getInstance(new ViewLogin());
+//        menuDataBarang.setVisible(!cL.getmL().getHakAkses().toLowerCase().contains("operator"));
+         if (!cL.getmL().getHakAkses().toLowerCase().contains("operator")) {
+            menuDataBarang.setVisible(false);
+        }
     }
 
     /**
@@ -41,6 +49,8 @@ public class App_Utama extends javax.swing.JFrame {
         menuDataBarang = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        menuLogout = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -86,6 +96,23 @@ public class App_Utama extends javax.swing.JFrame {
         });
         jMenuBar1.add(jMenu3);
 
+        jMenu1.setText("Pengaturan");
+        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu1ActionPerformed(evt);
+            }
+        });
+
+        menuLogout.setText("Logout");
+        menuLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuLogoutActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuLogout);
+
+        jMenuBar1.add(jMenu1);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -100,6 +127,7 @@ public class App_Utama extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void menuDataBarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDataBarangActionPerformed
@@ -123,6 +151,17 @@ public class App_Utama extends javax.swing.JFrame {
          viewLaporan lap = new viewLaporan();
         lap.setVisible(true);
     }//GEN-LAST:event_jMenu3MouseClicked
+
+    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void menuLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuLogoutActionPerformed
+        // TODO add your handling code here:
+        ViewLogin VL = new ViewLogin();
+        VL.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_menuLogoutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,10 +199,12 @@ public class App_Utama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenu menuDataBarang;
+    private javax.swing.JMenuItem menuLogout;
     // End of variables declaration//GEN-END:variables
 }
