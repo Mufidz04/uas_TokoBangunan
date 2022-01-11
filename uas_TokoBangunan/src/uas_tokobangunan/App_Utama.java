@@ -4,6 +4,18 @@
  */
 package uas_tokobangunan;
 
+//<<<<<<< HEAD
+import modul_barang.view.BarangView;
+import modul_laporan.view.viewLaporan;
+//=======
+
+//import modul_laporan.view.view;
+import modul_barang.view.BarangView;
+import modul_login.controller.ControllerLogin;
+import modul_login.view.ViewLogin;
+//>>>>>>> d4a0bee7f36efc83cc57b199b675e719a1b4ad2d
+
+
 /**
  *
  * @author mufid
@@ -15,6 +27,12 @@ public class App_Utama extends javax.swing.JFrame {
      */
     public App_Utama() {
         initComponents();
+        
+        ControllerLogin cL = ControllerLogin.getInstance(new ViewLogin());
+//        menuDataBarang.setVisible(!cL.getmL().getHakAkses().toLowerCase().contains("operator"));
+         if (!cL.getmL().getHakAkses().toLowerCase().contains("operator")) {
+            menuDataBarang.setVisible(false);
+        }
     }
 
     /**
@@ -28,9 +46,11 @@ public class App_Utama extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        menuDataBarang = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        menuLogout = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -47,19 +67,51 @@ public class App_Utama extends javax.swing.JFrame {
             .addGap(0, 450, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("Data Barang");
-        jMenu1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu1ActionPerformed(evt);
+        menuDataBarang.setText("Data Barang");
+        menuDataBarang.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menuDataBarangMouseClicked(evt);
             }
         });
-        jMenuBar1.add(jMenu1);
+        menuDataBarang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuDataBarangActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(menuDataBarang);
 
         jMenu2.setText("Data Transaksi");
         jMenuBar1.add(jMenu2);
 
         jMenu3.setText("Laporan");
+        jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu3MouseClicked(evt);
+            }
+        });
+        jMenu3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu3ActionPerformed(evt);
+            }
+        });
         jMenuBar1.add(jMenu3);
+
+        jMenu1.setText("Pengaturan");
+        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu1ActionPerformed(evt);
+            }
+        });
+
+        menuLogout.setText("Logout");
+        menuLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuLogoutActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuLogout);
+
+        jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
 
@@ -75,11 +127,41 @@ public class App_Utama extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void menuDataBarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDataBarangActionPerformed
+        // TODO add your handling code here:
+        BarangView barang = new BarangView();
+        barang.setVisible(true);
+    }//GEN-LAST:event_menuDataBarangActionPerformed
+
+    private void menuDataBarangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuDataBarangMouseClicked
+        // TODO add your handling code here:
+        BarangView barang = new BarangView();
+        barang.setVisible(true);
+    }//GEN-LAST:event_menuDataBarangMouseClicked
+
+    private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu3ActionPerformed
+
+    private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
+        // TODO add your handling code here:
+         viewLaporan lap = new viewLaporan();
+        lap.setVisible(true);
+    }//GEN-LAST:event_jMenu3MouseClicked
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void menuLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuLogoutActionPerformed
+        // TODO add your handling code here:
+        ViewLogin VL = new ViewLogin();
+        VL.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_menuLogoutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -122,5 +204,7 @@ public class App_Utama extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenu menuDataBarang;
+    private javax.swing.JMenuItem menuLogout;
     // End of variables declaration//GEN-END:variables
 }
