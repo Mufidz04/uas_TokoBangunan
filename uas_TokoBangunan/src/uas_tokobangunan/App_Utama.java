@@ -4,14 +4,14 @@
  */
 package uas_tokobangunan;
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 import modul_barang.view.BarangView;
 import modul_laporan.view.viewLaporan;
-=======
+//=======
 
-import modul_laporan.view.viewInternalLaporan;
+//import modul_laporan.view.view;
 import modul_barang.view.BarangView;
->>>>>>> d4a0bee7f36efc83cc57b199b675e719a1b4ad2d
+//>>>>>>> d4a0bee7f36efc83cc57b199b675e719a1b4ad2d
 
 
 /**
