@@ -17,11 +17,90 @@ public class ModelTransaksi {
 
     private String totalBayar;
     private String uangBayar;
-
-    private String idTransaksiDetail;
+    private String namaPelanggan;
+    private String subtotal;
+    private String namaProduk;
+    private String jenisProduk;
+    private String satuan;
+    private String ukuranProduk;
+    private String hargaProduk;
+    private String jumlahProduk;
+    private String idProduk;
     private String idTransaksi;
     private String namaBarang;
     private String qty;
+
+    public String getNamaPelanggan() {
+        return namaPelanggan;
+    }
+
+    public void setNamaPelanggan(String namaPelanggan) {
+        this.namaPelanggan = namaPelanggan;
+    }
+
+    public String getSubtotal() {
+        return subtotal;
+    }
+
+    public void setSubtotal(String subtotal) {
+        this.subtotal = subtotal;
+    }
+
+    public String getNamaProduk() {
+        return namaProduk;
+    }
+
+    public void setNamaProduk(String namaProduk) {
+        this.namaProduk = namaProduk;
+    }
+
+    public String getJenisProduk() {
+        return jenisProduk;
+    }
+
+    public void setJenisProduk(String jenisProduk) {
+        this.jenisProduk = jenisProduk;
+    }
+
+    public String getSatuan() {
+        return satuan;
+    }
+
+    public void setSatuan(String satuan) {
+        this.satuan = satuan;
+    }
+
+    public String getUkuranProduk() {
+        return ukuranProduk;
+    }
+
+    public void setUkuranProduk(String ukuranProduk) {
+        this.ukuranProduk = ukuranProduk;
+    }
+
+    public String getHargaProduk() {
+        return hargaProduk;
+    }
+
+    public void setHargaProduk(String hargaProduk) {
+        this.hargaProduk = hargaProduk;
+    }
+
+    public String getJumlahProduk() {
+        return jumlahProduk;
+    }
+
+    public void setJumlahProduk(String jumlahProduk) {
+        this.jumlahProduk = jumlahProduk;
+    }
+
+    public String getIdProduk() {
+        return idProduk;
+    }
+
+    public void setIdProduk(String idProduk) {
+        this.idProduk = idProduk;
+    }
 
     public String getTotalBayar() {
         return totalBayar;
@@ -37,14 +116,6 @@ public class ModelTransaksi {
 
     public void setUangBayar(String uangBayar) {
         this.uangBayar = uangBayar;
-    }
-
-    public String getIdTransaksiDetail() {
-        return idTransaksiDetail;
-    }
-
-    public void setIdTransaksiDetail(String idTransaksiDetail) {
-        this.idTransaksiDetail = idTransaksiDetail;
     }
 
     public String getIdTransaksi() {
@@ -83,7 +154,7 @@ public class ModelTransaksi {
 
         } catch (SQLException ex) {
             //Logger.getLogger(ModelPelanggan.class.getName()).log(Level.SEVERE, null, ex);
-            JOptionPane.showConfirmDialog(null, "Data gagal disimpan ke dalam Database \n" + ex);
+            JOptionPane.showConfirmDialog(null, "Data Gagal Disimpan Ke Dalam Database \n" + ex);
         }
 
     }
