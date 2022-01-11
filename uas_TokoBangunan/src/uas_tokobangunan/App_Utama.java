@@ -4,17 +4,13 @@
  */
 package uas_tokobangunan;
 
-//<<<<<<< HEAD
-import modul_barang.view.BarangView;
 import modul_laporan.view.viewLaporan;
-//=======
-
-//import modul_laporan.view.view;
 import modul_barang.view.BarangView;
 import modul_login.controller.ControllerLogin;
 import modul_login.view.ViewLogin;
-//>>>>>>> d4a0bee7f36efc83cc57b199b675e719a1b4ad2d
-
+import modul_transaksi.view.ViewTransaksi;
+import com.formdev.flatlaf.FlatLightLaf;
+import javax.swing.UIManager;
 
 /**
  *
@@ -27,10 +23,10 @@ public class App_Utama extends javax.swing.JFrame {
      */
     public App_Utama() {
         initComponents();
-        
+
         ControllerLogin cL = ControllerLogin.getInstance(new ViewLogin());
 //        menuDataBarang.setVisible(!cL.getmL().getHakAkses().toLowerCase().contains("operator"));
-         if (!cL.getmL().getHakAkses().toLowerCase().contains("operator")) {
+        if (!cL.getmL().getHakAkses().toLowerCase().contains("operator")) {
             menuDataBarang.setVisible(false);
         }
     }
@@ -81,6 +77,11 @@ public class App_Utama extends javax.swing.JFrame {
         jMenuBar1.add(menuDataBarang);
 
         jMenu2.setText("Data Transaksi");
+        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu2MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu2);
 
         jMenu3.setText("Laporan");
@@ -148,7 +149,7 @@ public class App_Utama extends javax.swing.JFrame {
 
     private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
         // TODO add your handling code here:
-         viewLaporan lap = new viewLaporan();
+        viewLaporan lap = new viewLaporan();
         lap.setVisible(true);
     }//GEN-LAST:event_jMenu3MouseClicked
 
@@ -162,6 +163,11 @@ public class App_Utama extends javax.swing.JFrame {
         VL.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_menuLogoutActionPerformed
+
+    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
+        // TODO add your handling code here:
+        new ViewTransaksi().setVisible(true);
+    }//GEN-LAST:event_jMenu2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -189,7 +195,11 @@ public class App_Utama extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(App_Utama.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        try {
+            UIManager.setLookAndFeel(new FlatLightLaf());
+        } catch (Exception ex) {
+            System.err.println("Failed to initialize LaF");
+        }
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
