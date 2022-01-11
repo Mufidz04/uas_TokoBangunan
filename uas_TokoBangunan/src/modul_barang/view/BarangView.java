@@ -222,7 +222,7 @@ public class BarangView extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         cariBarangTF = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Master Barang");
         setBackground(new java.awt.Color(96, 157, 160));
         setForeground(new java.awt.Color(96, 157, 160));
