@@ -4,7 +4,6 @@
  */
 package modul_login.controller;
 
-
 import javax.swing.JOptionPane;
 import modul_login.model.ModelLogin;
 import modul_login.view.ViewLogin;
@@ -34,7 +33,7 @@ public class ControllerLogin {
             vL.setVisible(false);
             this.mL = nML;
             App_Utama utama = new App_Utama();
-            JOptionPane.showMessageDialog(null, mL.getHakAkses());
+//            JOptionPane.showMessageDialog(null, mL.getHakAkses());
             utama.setVisible(true);
 
         }

@@ -7,9 +7,6 @@ package uas_tokobangunan;
 
 import modul_laporan.view.viewInternalLaporan;
 import modul_barang.view.BarangView;
-import modul_login.controller.ControllerLogin;
-import modul_login.view.ViewLogin;
-import modul_transaksi.view.ViewTransaksi;
 
 
 /**
@@ -23,8 +20,6 @@ public class App_Utama extends javax.swing.JFrame {
      */
     public App_Utama() {
         initComponents();
-        ControllerLogin cL = ControllerLogin.getInstance(new ViewLogin());
-        menuDataBarang.setVisible(!cL.getmL().getHakAkses().toLowerCase().contains("admin"));
     }
 
     /**
@@ -72,11 +67,6 @@ public class App_Utama extends javax.swing.JFrame {
         jMenuBar1.add(menuDataBarang);
 
         jMenu2.setText("Data Transaksi");
-        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu2MouseClicked(evt);
-            }
-        });
         jMenuBar1.add(jMenu2);
 
         jMenu3.setText("Laporan");
@@ -110,7 +100,6 @@ public class App_Utama extends javax.swing.JFrame {
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void menuDataBarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDataBarangActionPerformed
@@ -135,11 +124,6 @@ public class App_Utama extends javax.swing.JFrame {
         this.jPanel1.add(lap);
         lap.show();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
-
-    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
-        // TODO add your handling code here:
-        new ViewTransaksi().setVisible(true);
-    }//GEN-LAST:event_jMenu2MouseClicked
 
     /**
      * @param args the command line arguments

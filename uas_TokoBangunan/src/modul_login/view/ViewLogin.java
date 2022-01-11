@@ -161,7 +161,6 @@ public class ViewLogin extends javax.swing.JFrame {
     private void buttonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLoginActionPerformed
         // TODO add your handling code here:
         cL.Login();
-        
     }//GEN-LAST:event_buttonLoginActionPerformed
 
     /**
