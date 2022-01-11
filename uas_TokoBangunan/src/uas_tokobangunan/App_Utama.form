@@ -4,22 +4,22 @@
   <NonVisualComponents>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jMenu1">
+        <Menu class="javax.swing.JMenu" name="menuBarang">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Data Barang"/>
+            <Property name="text" type="java.lang.String" value="Master Barang"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuTransaksi">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Master Transaksi"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu1ActionPerformed"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuTransaksiMouseClicked"/>
           </Events>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
+        <Menu class="javax.swing.JMenu" name="menuLaporan">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Data Transaksi"/>
-          </Properties>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Laporan"/>
+            <Property name="text" type="java.lang.String" value="Master Laporan"/>
           </Properties>
         </Menu>
       </SubComponents>
@@ -31,7 +31,7 @@
   <SyntheticProperties>
     <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -61,7 +61,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cf" green="e7" red="e0" type="rgb"/>
+          <Color blue="d5" green="eb" red="e4" type="rgb"/>
         </Property>
       </Properties>
 
