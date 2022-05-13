@@ -1,5 +1,31 @@
-# Guide How To Use This Project
-*Disclaimer this project used Look&Feel by Flatlaf*
+# Perancangan Pemrograman Detskop Toko Bangunan UD. Tiga Saudara
+Tujuan Pembuatan Aplikasi Detskop Untuk Memenuhi Permintaan Client Dimana Kebutuhan Yang Diperlukan Adalah
+- Bagaimana cara untuk menyetok barang menggunakan aplikasi agar tertata secara rapi?
+- Bagaimana cara agar laporan penjualan tersimpan secara rapi dalam aplikasi sistem kasir?
+- Bagaimana membuat sistem transaksi secara prosedural?
+
+# Macam Macam Modul Pada Pembuatan Project Pemrograman Detskop UD. Tiga Saudara
+- Modul Barang (Arip Irwansyah & Aditya Dava)
+- Modul DB (Asep Supriyanto & Tsaqif Mutashim Mufid)
+- Modul Laporan (Asep Supriyanto)
+- Modul Login (Tsaqif Mutashim Mufid)
+- Modul Transaksi (Tsaqif Mutashim Mufid)
+- Aplikasi Utama (Kelompok 1)
+
+# Kelompok 1
+Universitas SingaPerbangsa Karawang
+- Arip Irwansyah                (1910631170009)
+- Aditya Dava                   (1910631170002)
+- Agnia Virli                   (1910631170003)
+- Asep Supriyanto               (1910631170166)
+- Tsaqif Mutashim Mufid         (1910631170144)
+
+```
+Kelas 5B
+Pemrograman Berbasis Desktop
+Link Github: https://github.com/Mufidz04/uas_TokoBangunan
+Link Laporan: https://drive.google.com/file/d/1UCiN0qUX44bEhjfqCzq3cuRtkvxUTFoa/view?usp=sharing
+```
 
 ## Open Project
 Lakukan `git clone` pada project ini, setelah itu buka pada NetBeans `Open Projects`
